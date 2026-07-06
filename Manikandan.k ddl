@@ -1,0 +1,24 @@
+create database Hindustan;
+use Hindustan;
+create table students(rollno int,name varchar(20),dept varchar(100));
+insert into students values(45,"sarathi","computer science");
+insert into students values(46,"santhosh","computer science");
+insert into students values(47,"vams","computer science");
+insert into students values(48,"kavin","computer science");
+create table students1(rollno int,name varchar(20),dept varchar(100));
+insert into students1 values(44,"saran","computer science");
+insert into students1 values(45,"sarathi","computer science");
+insert into students1 values(46,"santhosh","computer science");
+insert into students1 values(47,"vams","computer science");
+insert into students1 values(48,"kavin","computer science");
+select * from students1;
+create table students2(rollno int primary key,name varchar(20),dept varchar(100));
+insert into students2 values(44,"saran","computer science");
+insert into students2 values(45,"sarathi","computer science");
+select * from students2;
+create table vishnusekar(id int,name varchar(20),skills set("c","c++","java master"));
+insert into vishnusekar values(67,"sarathi","java master");
+select * from vishnusekar;
+rename table students1 to manikandan;
+alter table manikandan
+ 
