@@ -1,0 +1,19 @@
+create database hits;
+use hits;
+create table employees(id int,name varchar(20),roll varchar(20));
+insert into employees values(44,"saran","datananlyst");
+insert into employees values(45,"sarathi","javamaster");
+insert into employees values(46,"santhosh","python");
+insert into employees values(47,"vams","python");
+insert into employees values(48,"kavin","python");
+replace into employees values(46,"vishnusekar","javaking");
+select * from employees;
+create table tcs(id int,name varchar(20),roll varchar(20));
+insert into tcs values(44,"saran","datananlyst");
+insert into tcs values(45,"sarathi","javamaster");
+insert into tcs values(46,"santhosh","python");
+insert into tcs values(47,"vams","python");
+insert into tcs values(48,"kavin","python");
+replace into tcs values(46,"vishnusekar","javaking");
+insert into tcs select * from employees where roll="python";
+
