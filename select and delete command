@@ -1,0 +1,70 @@
+create database company;
+use company;
+create table tcs(id int, name varchar(30), age int, salary int, dept varchar(20), designation varchar(30));
+alter table tcs rename to emp;
+INSERT INTO Emp (id, name, age, salary, dept, designation) VALUES
+(1, 'Arun', 24, 250000, 'Developer', 'Software Engineer'),
+(2, 'Priya', 29, 420000, 'Finance', 'Financial Analyst'),
+(3, 'Rahul', 35, 680000, 'HR', 'HR Manager'),
+(4, 'Sneha', 27, 390000, 'Tester', 'QA Engineer'),
+(5, 'Vikram', 31, 850000, 'Developer', 'Senior Software Engineer'),
+(6, 'Meena', 23, 180000, 'HR', 'HR Executive'),
+(7, 'Karthik', 40, 950000, 'Finance', 'Finance Manager'),
+(8, 'Divya', 26, 320000, 'Tester', 'Test Engineer'),
+(9, 'Suresh', 45, 1000000, 'Developer', 'Technical Architect'),
+(10, 'Anitha', 38, 760000, 'Finance', 'Senior Accountant'),
+(11, 'Ramesh', 25, 220000, 'Developer', 'Software Engineer'),
+(12, 'Lakshmi', 30, 450000, 'Finance', 'Financial Analyst'),
+(13, 'Mohan', 28, 310000, 'Tester', 'QA Engineer'),
+(14, 'Keerthi', 24, 180000, 'HR', 'HR Executive'),
+(15, 'Ajay', 34, 720000, 'Developer', 'Senior Software Engineer'),
+(16, 'Nisha', 39, 840000, 'Finance', 'Senior Accountant'),
+(17, 'Prakash', 42, 910000, 'Finance', 'Finance Manager'),
+(18, 'Swathi', 27, 340000, 'Tester', 'Test Engineer'),
+(19, 'Hari', 23, 160000, 'Developer', 'Software Engineer'),
+(20, 'Pooja', 33, 520000, 'HR', 'HR Manager'),
+(21, 'Ganesh', 29, 470000, 'Developer', 'Software Engineer'),
+(22, 'Rekha', 36, 650000, 'Finance', 'Financial Analyst'),
+(23, 'Deepak', 41, 980000, 'Developer', 'Technical Architect'),
+(24, 'Kavya', 22, 140000, 'HR', 'HR Executive'),
+(25, 'Sanjay', 32, 580000, 'Tester', 'QA Engineer'),
+(26, 'Anand', 37, 790000, 'Developer', 'Senior Software Engineer'),
+(27, 'Bhavani', 26, 280000, 'Finance', 'Senior Accountant'),
+(28, 'Naveen', 44, 930000, 'Finance', 'Finance Manager'),
+(29, 'Shalini', 31, 430000, 'Tester', 'Test Engineer'),
+(30, 'Manoj', 48, 1000000, 'HR', 'HR Manager'),
+(31, 'Rohit', 26, 270000, 'Developer', 'Software Engineer'),
+(32, 'Aishwarya', 29, 480000, 'Finance', 'Financial Analyst'),
+(33, 'Vignesh', 24, 230000, 'Tester', 'Test Engineer'),
+(34, 'Harini', 22, 150000, 'HR', 'HR Executive'),
+(35, 'Sathish', 35, 780000, 'Developer', 'Senior Software Engineer'),
+(36, 'Janani', 31, 560000, 'Finance', 'Senior Accountant'),
+(37, 'Bharath', 45, 970000, 'Developer', 'Technical Architect'),
+(38, 'Revathi', 40, 890000, 'Finance', 'Finance Manager'),
+(39, 'Kiran', 27, 360000, 'Tester', 'QA Engineer'),
+(40, 'Anu', 38, 610000, 'HR', 'HR Manager'),
+(41, 'Dinesh', 23, 190000, 'Developer', 'Software Engineer'),
+(42, 'Preethi', 34, 520000, 'Finance', 'Financial Analyst'),
+(43, 'Saravanan', 30, 410000, 'Tester', 'QA Engineer'),
+(44, 'Gayathri', 25, 210000, 'HR', 'HR Executive'),
+(45, 'Arvind', 36, 810000, 'Developer', 'Senior Software Engineer'),
+(46, 'Sindhu', 33, 640000, 'Finance', 'Senior Accountant'),
+(47, 'Nitin', 43, 940000, 'Developer', 'Technical Architect'),
+(48, 'Latha', 41, 920000, 'Finance', 'Finance Manager'),
+(49, 'Vinod', 28, 390000, 'Tester', 'Test Engineer'),
+(50, 'Shobana', 37, 690000, 'HR', 'HR Manager');
+delete from emp;
+select * from emp;
+select * from emp order by salary;
+select * from emp order by salary desc;
+select count(*) from emp;
+select name from emp where salary>=50000;
+select count(*) from emp where dept="Developer";
+select dept,count(*) as count from emp group by dept;
+select avg(salary)from emp where designation="software engineer";
+select dept as department from emp;
+delete from emp limit 2;
+delete from emp where salary<300000;
+delete from emp where salary between 800000 and 900000;
+delete from emp where name like "A%";
+delete from emp order by salary limit 2;
