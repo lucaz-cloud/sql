@@ -1,0 +1,23 @@
+create database hindustan;
+use hindustan;
+create table stu(id int,name varchar(20),dept varchar(20));
+insert into stu values(44,"saran","computer science");
+insert into stu values(45,"sarathi","computer science");
+insert into stu values(46,"kavin","computer science");
+alter table stu add column marks int;
+select * from stu;
+update stu set marks=88 where id=44;
+update stu set marks=71 where id=45;
+update stu set marks=53 where id=46;
+alter table stu add column grade varchar(5);
+update stu set grade=case
+when marks>=80 then'S'
+when marks>60 then 'A'
+else 'F'
+end;
+alter table stu add column location varchar(10);
+update stu set location="padur" where id=44;
+update stu set location="japan" where name="sarathi";
+update stu set location="dholakpur" where marks=53;
+update stu set marks= if(location="padur" and id=44,100,0);
+update stu set grade="s" where marks between 40 and 100;
