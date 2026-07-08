@@ -1,0 +1,33 @@
+from tkinter import *
+'''connection = mysql.connector.connect(
+     host="localhost",
+     user="root",
+     password="hits1234",
+     database="india"
+)
+cur=connection.cursor()
+def add():
+    cur.execute("insert into score values(%s,%s)",(e1.get(),e2.get()))
+    e1.delete(0, END)
+    e2.delete(0, END)
+
+def avg():
+    cur.execute("select avg(mark) from s")
+    a=cur.fetchall()
+    E4.config(text="average =%.2f"%a[0])'''
+
+root=Tk()
+root.geometry("500x450")
+root.title("STUDENT MARKS")
+Label(root,text="NAME").pack()
+e1=Entry(root)
+e1.pack()
+Label(root,text="MARK").pack()
+e2=Entry(root)
+e2.pack()
+Button(root,text="ADD",command=add).pack()
+Buto=(root,text="SHOW AVG",command=avg).pack()
+
+l4.(pack=(0))
+root.mainloop()
+con.close()
